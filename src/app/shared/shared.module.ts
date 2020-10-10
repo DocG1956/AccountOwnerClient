@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ErrorModalComponent } from './modals/error-modal/error-modal.component';
+import { SuccessModalComponent } from './modals/success-modal/success-modal.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [ErrorModalComponent],
+  declarations: [ErrorModalComponent, SuccessModalComponent],
   exports: [ErrorModalComponent]
 })
 export class SharedModule { }

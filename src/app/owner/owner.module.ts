@@ -17,6 +17,7 @@ import { OwnerUpdateComponent } from './owner-update/owner-update.component';
       { path: 'list', component: OwnerListComponent },
       { path: 'details/:id', component: OwnerDetailsComponent },
       { path: 'create', component: OwnerCreateComponent },
+      { path: 'update/:id', component: OwnerUpdateComponent }
     ])
   ],
   declarations: [

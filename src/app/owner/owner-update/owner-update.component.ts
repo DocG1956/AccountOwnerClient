@@ -84,6 +84,8 @@ export class OwnerUpdateComponent implements OnInit {
     let apiUrl = `api/owner/${this.owner.id}`;
     this.repository.update(apiUrl, this.owner)
       .subscribe(res => {
+        //https://stackoverflow.com/questions/32735396/error-ts2339-property-modal-does-not-exist-on-type-jquery
+        //$('#successModal').modal();
         ($('#successModal') as any).modal();
       },
         (error => {
